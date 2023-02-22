@@ -11,7 +11,7 @@ function Cards() {
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem 
-                        src="images/corte-plancha.jpeg"
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/corte-plancha.jpeg"
                         text="Planchas de acero inoxidable hasta 15 mm de espesor x 6000 mm"
                         label="CORTE DE PLACHA CON
                         CIZALLA HIDRAULICACIZALLA HIDRA"
@@ -19,7 +19,7 @@ function Cards() {
                         />
 
                         <CardItem 
-                        src="images/plegado-plancha.jpeg"
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/plegado-plancha.jpeg"
                         text="Capacidad: Hasta 20 mm de
                         espesor x 6000 mm"
                         label="PLEGADO DE PLANCHAS
@@ -32,7 +32,7 @@ function Cards() {
 
                     <ul className="cards__items">
                         <CardItem 
-                        src="images/rolado-plancha.jpeg"
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/rolado-plancha.jpeg"
                         text="Capacidad: Hasta 10mm de espesor
                         x 2500mm"
                         label="ROLADO DE PLANCHAS"
@@ -40,7 +40,7 @@ function Cards() {
                         />
 
                         <CardItem 
-                        src="images/barolado-tubo.jpeg"
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/barolado-tubo.jpeg"
                         text="Realizamos barolado de tubos
                         redondos hasta 6 pulgadas de diámetro, en
                         IPN de 160, en HEB de 140, tubos
@@ -55,7 +55,7 @@ function Cards() {
 
                     <ul className="cards__items">
                         <CardItem 
-                        src="images/doblado-tuberia.jpeg"
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/doblado-tuberia.jpeg"
                         text="Realizamos doblado de tubo
                         redondo y cuadrado. Capacidad: hasta 3 pulgadas de diámetro"
                         label="DOBLADO DE TUBERIA"
@@ -63,7 +63,7 @@ function Cards() {
                         />
 
                         <CardItem 
-                        src="images/rosca-pernos.jpeg"
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/rosca-pernos.jpeg"
                         text="Roscamos tubos con capacidad de hasta 4 pulgadas de diametro y pernos has 2 pulgas de diametro"
                         label="ROSCADO DE TUBOS Y
                         PERNOSPERNO"

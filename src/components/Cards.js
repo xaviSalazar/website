@@ -69,7 +69,83 @@ function Cards() {
                         PERNOSPERNO"
                         path="/services"
                         />  
+                    </ul>
 
+                    <ul className="cards__items">
+                        <CardItem 
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/troquelado.jpeg"
+                        text="Contamos con troqueladora de 70
+                        TON de presión para producción en
+                        serie."
+                        label="TROQUELADO"
+                        path="/services"
+                        />
+
+                        <CardItem 
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/soldadura.jpeg"
+                        text="Smaw, Tig, Mig, Servicios de calidad NDT"
+                        label="SOLDADURA"
+                        path="/services"
+                        />  
+                    </ul>
+
+                    <ul className="cards__items">
+                        <CardItem 
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/tapas-casquetes.jpeg"
+                        text="Realizamos el rebordeado y
+                        bombeado para tapas de tanques
+                        hasta un diámetro de 5000mm
+                        x12mm de espesor"
+                        label="FABRICACIÓN DE TAPAS
+                        Y CASQUETES"
+                        path="/services"
+                        />
+
+                        <CardItem 
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/frojado-frio.jpeg"
+                        text="Realizamos el trabajo de forjado en
+                        frio para cerrajería ornamental."
+                        label="SERVICIO DE FORJADO
+                        EN FRIO"
+                        path="/services"
+                        />  
+                    </ul>
+
+                    <ul className="cards__items">
+                        <CardItem 
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/cnc-plasma.jpeg"
+                        text="Realizamos corte por plasma hasta
+                        16mm de espesor y con Oxicorte
+                        hasta 50mm de espeso"
+                        label="CORTE MULTIPLE Y
+                        PUNZONADO"
+                        path="/services"
+                        />
+
+                        <CardItem 
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/corte-punzado.jpeg"
+                        text="Placas perforada para anclaje en
+                        varias mediadas y espesores."
+                        label="SERVICIO DE FORJADO
+                        EN FRIO"
+                        path="/services"
+                        />  
+                    </ul>
+
+                    <ul className="cards__items">
+                        <CardItem 
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/perforados.jpeg"
+                        text="Realizamos perforados con taladro radial hasta 2 pulgadas de diámetro"
+                        label="PERFORADOS"
+                        path="/services"
+                        />
+
+                        <CardItem 
+                        src="https://d1d5i0xjsb5dtw.cloudfront.net/torno-cnc.jpeg"
+                        text="Torno CNC. CENTRO DE MECANIZADO"
+                        label="MAQUINARIA CNC"
+                        path="/services"
+                        />  
                     </ul>
 
                 </div>

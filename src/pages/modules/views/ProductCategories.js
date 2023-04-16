@@ -70,7 +70,7 @@ const images = [
     width: '40%',
   },
   {
-    url: 'https://d1d5i0xjsb5dtw.cloudfront.net/torno-cnc.jpeg',
+    url: 'https://d1d5i0xjsb5dtw.cloudfront.net/torno_cnc.jpeg',
     title: 'Torno CNC',
     width: '38%',
   },

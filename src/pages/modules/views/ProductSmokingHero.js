@@ -19,11 +19,14 @@ function ProductSmokingHero() {
         }}
       >
         <Typography variant="h4" component="span">
-        ¿Necesitas más información a cerca de nosotros?
+        ¿Necesitas más información acerca de nosotros?
         </Typography>
       </Button>
-      <Typography variant="subtitle1" sx={{ my: 3 }}>
+      <Typography variant="h4" sx={{ my: 3 }}>
         Contactanos al !
+      </Typography>
+      <Typography variant="h5" sx={{ my: 3 }}>
+        (+593)0987136434 | ventas@sermeinec.com
       </Typography>
       {/* <Box
         component="img"

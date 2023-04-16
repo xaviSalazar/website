@@ -10,8 +10,8 @@ function Copyright() {
   return (
     <React.Fragment>
       {'© '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" href="https://sermeinec.com">
+      SERVICIOS MECANICOS E INDUSTRIALES S.A.S 
       </Link>{' '}
       {new Date().getFullYear()}
     </React.Fragment>
@@ -31,16 +31,16 @@ const iconStyle = {
   },
 };
 
-const LANGUAGES = [
-  {
-    code: 'en-US',
-    name: 'English',
-  },
-  {
-    code: 'fr-FR',
-    name: 'Français',
-  },
-];
+// const LANGUAGES = [
+//   {
+//     code: 'en-US',
+//     name: 'English',
+//   },
+//   {
+//     code: 'fr-FR',
+//     name: 'Français',
+//   },
+// ];
 
 export default function AppFooter() {
   return (
@@ -49,52 +49,31 @@ export default function AppFooter() {
       sx={{ display: 'flex', bgcolor: 'secondary.light' }}
     >
       <Container sx={{ my: 8, display: 'flex' }}>
-        <Grid container spacing={5}>
-          <Grid item xs={6} sm={4} md={3}>
-            <Grid
-              container
-              direction="column"
-              justifyContent="flex-end"
-              spacing={2}
-              sx={{ height: 120 }}
-            >
-              <Grid item sx={{ display: 'flex' }}>
-                <Box component="a" href="https://mui.com/" sx={iconStyle}>
-                  <img
-                    src="/static/themes/onepirate/appFooterFacebook.png"
-                    alt="Facebook"
-                  />
-                </Box>
-                <Box component="a" href="https://twitter.com/MUI_hq" sx={iconStyle}>
-                  <img
-                    src="/static/themes/onepirate/appFooterTwitter.png"
-                    alt="Twitter"
-                  />
-                </Box>
-              </Grid>
-              <Grid item>
-                <Copyright />
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item xs={6} sm={4} md={2}>
+
+        <Grid container spacing={2} >
+          
+          <Grid item xs={12} direction="column" display="flex" justifyContent="center" alignItems="center" >
             <Typography variant="h6" marked="left" gutterBottom>
-              Legal
+              Quito
             </Typography>
-            <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
+            <Typography variant="h7" gutterBottom>
+             Dirección: AV. EL INCA LT4 y AV. GENERAL ENRIQUEZ
+            </Typography>
+            {/* <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
               <Box component="li" sx={{ py: 0.5 }}>
                 <Link href="/premium-themes/onepirate/terms/">Terms</Link>
               </Box>
               <Box component="li" sx={{ py: 0.5 }}>
                 <Link href="/premium-themes/onepirate/privacy/">Privacy</Link>
               </Box>
-            </Box>
+            </Box> */}
           </Grid>
-          <Grid item xs={6} sm={8} md={4}>
-            <Typography variant="h6" marked="left" gutterBottom>
+
+          {/* <Grid item xs={6} sm={8} md={4}> */}
+            {/* <Typography variant="h6" marked="left" gutterBottom>
               Language
-            </Typography>
-            <TextField
+            </Typography> */}
+            {/* <TextField
               select
               size="medium"
               variant="standard"
@@ -108,9 +87,39 @@ export default function AppFooter() {
                   {language.name}
                 </option>
               ))}
-            </TextField>
-          </Grid>
-          <Grid item>
+            </TextField> */}
+          {/* </Grid> */}
+
+          
+
+          <Grid item xs={12} >
+
+          <Grid
+            container
+            direction="column"
+            justifyContent="flex-center"
+            spacing={2}
+            sx={{ height: 20 }}
+          >
+            {/* <Grid item sx={{ display: 'flex' }}> */}
+              {/* <Box component="a" href="https://mui.com/" sx={iconStyle}>
+                <img
+                  src="/static/themes/onepirate/appFooterFacebook.png"
+                  alt="Facebook"
+                />
+              </Box> */}
+              {/* <Box component="a" href="https://twitter.com/MUI_hq" sx={iconStyle}>
+                <img
+                  src="/static/themes/onepirate/appFooterTwitter.png"
+                  alt="Twitter"
+                /> 
+              </Box> */}
+            {/* </Grid> */}
+            <Grid item display="flex" justifyContent="center" alignItems="center">
+              <Copyright />
+            </Grid>
+
+            {/* <Grid item xs={10}>
             <Typography variant="caption">
               {'Icons made by '}
               <Link href="https://www.freepik.com" rel="sponsored" title="Freepik">
@@ -130,7 +139,12 @@ export default function AppFooter() {
                 CC 3.0 BY
               </Link>
             </Typography>
+          </Grid> */}
+
           </Grid>
+
+          </Grid>
+
         </Grid>
       </Container>
     </Typography>

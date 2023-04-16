@@ -6,6 +6,8 @@ import { HashRouter } from 'react-router-dom'
 import AppAppBar from './pages/modules/views/AppAppBar';
 import { styled } from '@mui/material/styles';
 import SiderBar from './pages/modules/views/SideBar';
+import AppFooter from './pages/modules/views/AppFooter';
+import withRoot from './pages/modules/withRoot';
 
 // theme
 
@@ -42,10 +44,11 @@ function App() {
         <SiderBar isOpenSidebar={state} onCloseSideBar = {() => setState(false)}/>
         <MainStyle>
         <Router />
+        <AppFooter />
         </MainStyle>
     </RootStyle>
     </HashRouter> 
   );
 }
 
-export default App;
+export default withRoot(App);

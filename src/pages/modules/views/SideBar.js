@@ -22,10 +22,10 @@ function SideBar({ isOpenSidebar, onCloseSideBar}) {
           <Drawer
             open={isOpenSidebar}
             onClose={onCloseSideBar}
-            anchor='right'
-            PaperProps={{
-                sx: { width: 200 },
-              }}
+            anchor='top'
+            // PaperProps={{
+            //     sx: { width: 200 },
+            //   }}
           >
         <List>
 

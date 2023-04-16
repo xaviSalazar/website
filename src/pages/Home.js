@@ -15,7 +15,6 @@ function Index() {
       {/* <ProductHowItWorks /> */}
       {/* <ProductCTA /> */}
       <ProductSmokingHero />
-      {/* <AppFooter />  */}
       </React.Fragment>  
   );
   

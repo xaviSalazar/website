@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import {Link as RouterLink} from 'react-router-dom'
-import Link from '@mui/material/Link';
+import {Link as RouterLink, matchPath, useLocation} from 'react-router-dom'
 // import { Link } from "react-router-dom";
 
 import AppBar from '../components/AppBar';
@@ -13,6 +12,7 @@ import withRoot from '../withRoot';
 
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 
 
 
@@ -37,70 +37,118 @@ const ToolbarStyle = styled(Toolbar)(({ theme }) => ({
   },
 }));
 
-
 AppAppBar.propTypes = {
   onOpenSidebar: PropTypes.func,
 };
 
-//
-
-const rightLink = {
-  fontSize: 16,
-  color: 'common.white',
-  ml: 3,
-};
+// const rightLink = {
+//   fontSize: 16,
+//   color: 'common.white',
+//   ml: 3,
+// };
 
 function AppAppBar({ setState}) {
+
+  const { pathname } = useLocation();
+
+  const match = (path) => (path ? !!matchPath({ path, end: false }, pathname) : false);
 
   return (
         <RootStyle>
         <ToolbarStyle>
 
-          <Box sx={{ flex: 1 }} />
-          <Link
-            variant="h6"
-            underline="none"
-            color="inherit"
-            component={RouterLink}
-            to="/"
-            sx={{ fontSize: 24 }}
-          >
-            {`SERMEIN  `}
-            <i className='fab fa-whmcs' />
-          </Link>
-          <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end'}}>
+          {/* <Box sx={{ flex: 1}} /> */}
 
-          <Link
-              color="inherit"
-              variant="h6"
-              underline="none"
+          <List >
+            <ListItem disablePadding>
+              <ListItemButton
               component={RouterLink}
               to="/"
-              sx={{ ...rightLink, display: { xs: 'none', sm: 'block' } }}
-            >
-              {'Inicio'}
-            </Link>
+              sx={{
+                px: 1,
+                pt: 1,
+                pb: true ? 0 : 2.5,
+                '&:hover': {
+                  backgroundColor: 'grey',
+                },
+              }} 
+              >
+                <ListItemText primary="SERMEIN" 
+                    primaryTypographyProps={{
+                    fontSize: 30,
+                    fontWeight: 'medium',
+                    lineHeight: '20px',
+                    mb: '2px',
+                  }}/>
+                  <i className='fab fa-whmcs' />
+              </ListItemButton>
+            </ListItem>
+          </List>
 
-            <Link
-              color="inherit"
-              variant="h6"
-              underline="none"
-              component={RouterLink}
-              to="/servicios"
-              sx={{ ...rightLink, display: { xs: 'none', sm: 'block' } }}
-            >
-              {'Servicios'}
-            </Link>
+          <Box sx={{ flex: 1, display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
 
-            <Link
-              variant="h6"
-              underline="none"
+          <List sx={
+          {
+          display: { xs: 'none', sm: 'flex'} ,
+          flexDirection: 'row',
+          p: 1,
+          m: 1,
+          borderRadius: 1,
+          }} >
+
+            <ListItem disablePadding>
+              <ListItemButton
               component={RouterLink}
-              to="/productos"
-              sx={{ ...rightLink, color: 'secondary.main',display: { xs: 'none', sm: 'block' } }}
-            >
-              {'Productos'}
-            </Link>
+              to="servicios"
+              sx={{
+                px: 1,
+                pt: 1,
+                pb: true ? 0 : 2.5,
+                '&:hover': {
+                  backgroundColor: 'grey',
+                },
+                ...(match('servicios') &&  {
+                  backgroundColor: 'grey',
+                }),
+
+              }} 
+              >
+                <ListItemText primary="Servicios" 
+                    primaryTypographyProps={{
+                    fontSize: 20,
+                    fontWeight: 'medium',
+                    lineHeight: '20px',
+                    mb: '2px',
+                  }}/>
+              </ListItemButton>
+            </ListItem>
+
+            <ListItem disablePadding sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end'}}>
+              <ListItemButton
+              component={RouterLink}
+              to="productos"
+              sx={{
+                px: 1,
+                pt: 1,
+                pb: true ? 0 : 2.5,
+                '&:hover': {
+                  backgroundColor: 'grey',
+                },
+                ...(match('productos') &&  {
+                  backgroundColor: 'grey',
+                }),
+              }} 
+              >
+                <ListItemText primary="Productos" 
+                    primaryTypographyProps={{
+                    fontSize: 20,
+                    fontWeight: 'medium',
+                    lineHeight: '20px',
+                    mb: '2px',
+                  }}/>
+              </ListItemButton>
+            </ListItem>
+          </List>
 
             <IconButton
             onClick={() => setState(true)}
@@ -113,6 +161,7 @@ function AppAppBar({ setState}) {
             <MenuIcon />
           </IconButton>
           </Box>
+          
         </ToolbarStyle>
         </RootStyle>
   );

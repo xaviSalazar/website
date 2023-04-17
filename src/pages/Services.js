@@ -81,7 +81,6 @@ const images = [
 export default function Services() {
 
     return (
-
 <Container maxWidth> 
 <Grid container spacing={3}>
         {images.map((image) =>(
@@ -108,8 +107,6 @@ export default function Services() {
         ))} 
 </Grid>
 </Container>
-
   );
-
 
 }

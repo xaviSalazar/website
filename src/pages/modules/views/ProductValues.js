@@ -1,9 +1,14 @@
 import * as React from 'react';
 
 import Box from '@mui/material/Box';
+
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import { ListItem } from '@mui/material';
+import CheckRoundedIcon from '@mui/icons-material/CheckRounded';
 
 const item = {
   display: 'flex',
@@ -25,8 +30,9 @@ function ProductValues() {
           alt="curvy lines"
           sx={{ pointerEvents: 'none', position: 'absolute', top: -180 }}
         />
-        <Grid container spacing={5}>
-          <Grid item xs={12} md={4}>
+        <Grid container spacing={2}>
+
+          <Grid item xs={12} md={6}>
             <Box sx={item}>
               <Box
                 component="img"
@@ -35,20 +41,37 @@ function ProductValues() {
                 sx={{ height: 100 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                MISION
+                MISIÓN 
               </Typography>
               <Typography variant="h5">
+                
                 {
-                  'From the latest trendy boutique hotel to the iconic palace with XXL pool'
+                  'Proveer de repuestos industriales y cuchillas para las compañías de productos de bienes, servicios y la industria en general, involucrándose con:'
                 }
 
+                  <ListItem>
+                        <ListItemIcon><CheckRoundedIcon/></ListItemIcon>
+                        <ListItemText><Typography variant="h5">{`Diseño`}</Typography></ListItemText>
+                  </ListItem>
+
+                  <ListItem>
+                        <ListItemIcon><CheckRoundedIcon/></ListItemIcon>
+                        <ListItemText><Typography variant="h5">{`Fabricación`}</Typography></ListItemText>
+                  </ListItem>
+
+                  <ListItem>
+                        <ListItemIcon><CheckRoundedIcon/></ListItemIcon>
+                        <ListItemText><Typography variant="h5">{`Desarrollo del sistema`}</Typography></ListItemText>
+                  </ListItem>
+
                 {
-                  ', go for a mini-vacation just a few subway stops away from your home.'
+                  'Partes componentes de las mismas donde se utiliza procesos seguro, con calidad y responsabilidad ambiental esto con el fin de cumplir los requerimientos y satisfacer las necesidades demandadas. Trabajando con personal competente, consistente, honesto, responsable, comprometido para cumplir con los requerimientos del cliente.'
                 }
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} md={4}>
+
+          <Grid item xs={12} md={6}>
             <Box sx={item}>
               <Box
                 component="img"
@@ -57,34 +80,16 @@ function ProductValues() {
                 sx={{ height: 100 }}
               />
               <Typography variant="h6" sx={{ my: 5 }}>
-                VISION
+                VISIÓN
               </Typography>
               <Typography variant="h5">
                 {
-                  'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '
+                  'Lograr reconocimiento en el mercado gracias a nuestra gestión de calidad, seguridad industrial, responsabilidad ambiental en todos sus trabajos. Buscar satisfacer las necesidades del cliente trabajando con el mejor capital humano y tecnológico para ofrecer siempre excelencia en calidad y servicio.'
                 }
+              </Typography>
+            </Box>
+          </Grid>
 
-                {'your Sundays will not be alike.'}
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <Box sx={item}>
-              <Box
-                component="img"
-                src="https://d1d5i0xjsb5dtw.cloudfront.net/valores_sitio.jpeg"
-                alt="clock"
-                sx={{ height: 100 }}
-              />
-              <Typography variant="h6" sx={{ my: 5 }}>
-                VALORES
-              </Typography>
-              <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
-              </Typography>
-            </Box>
-          </Grid>
         </Grid>
       </Container>
     </Box>

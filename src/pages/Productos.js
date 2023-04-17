@@ -67,12 +67,19 @@ export default function Productos() {
     <Grid container spacing = {3}>
         {images.map((image) => (
             <Grid key = {image.label} item xs = {12} sm={12} md={4}>
-                <Card sx={{ maxWidth: 600}}>
+                <Card 
+                    raised
+                    sx={{ 
+                        maxWidth: 600,
+                        margin: "0 auto",
+                        padding: "0.1em",
+                    }}>
                     <CardMedia
                         component="img"
                         alt={image.label}
-                        height="250"
+                        height="300"
                         image={image.src}
+                        sx={{ padding: "1em 1em 0 1em", objectFit: "fill" }}
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h6" component="div">

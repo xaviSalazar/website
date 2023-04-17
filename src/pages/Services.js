@@ -91,6 +91,7 @@ export default function Services() {
         alt={image.label}
         height="250"
         image = {image.src}
+        sx={{ padding: "1em 1em 0 1em", objectFit: "fill" }}
         />
         <CardContent>
         <Typography gutterBottom variant="h6" component="div">

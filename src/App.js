@@ -9,6 +9,9 @@ import SiderBar from './pages/modules/views/SideBar';
 import AppFooter from './pages/modules/views/AppFooter';
 import withRoot from './pages/modules/withRoot';
 
+import { WhatsAppWidget } from 'react-whatsapp-widget';
+import 'react-whatsapp-widget/dist/index.css';
+
 // theme
 
 const APP_BAR_MOBILE = 64;
@@ -44,6 +47,11 @@ function App() {
         <SiderBar isOpenSidebar={state} onCloseSideBar = {() => setState(false)}/>
         <MainStyle>
         <Router />
+
+          <WhatsAppWidget
+              message={`Hola! 👋🏼 \n\nEn que podemos ayudarle?`}
+              phoneNumber="593987136434"
+          />
         <AppFooter />
         </MainStyle>
     </RootStyle>
